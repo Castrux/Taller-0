@@ -371,12 +371,11 @@ public class ConsolaOlimpicos
 		System.out.println("\n" + "Pais que representa un altleta" + "\n");
 		
 		String nombre_atleta = input("Ingrese el nombre del atleta que le interesa"); 
-		List<Map<String, Object>> atletas = calculadora.BuscarPaisDeAtleta(nombre_atleta);
+		String atletas = calculadora.BuscarPaisDeAtleta(nombre_atleta);
 		System.out.println(atletas);
 		if (nombre_atleta == null)	
 	{
-			//List<Map<String, Object>> atletas = calculadora.BuscarPaisDeAtleta(nombre_atleta);
-			System.out.println(atletas);
+			System.out.println("Error");
 	}
 	}
 	/**

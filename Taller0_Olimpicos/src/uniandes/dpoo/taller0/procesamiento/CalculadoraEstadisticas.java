@@ -395,21 +395,16 @@ public class CalculadoraEstadisticas
 	}
 	
 	
-	public Pais BuscarPaisDeAtleta(String nombreAtleta)
+	public String BuscarPaisDeAtleta(String nombreAtleta)
 	{
 		Pais resultado = null;
-		
-		Atleta atleta = buscarAtleta(nombreAtleta);
-		resultado = atleta.darPais();
-		System.out.println(resultado);
-		/**
-		if (atleta != null)
+		Atleta elAtleta = buscarAtleta(nombreAtleta);
+		if (elAtleta != null)
 		{
-			
-			 resultado = atleta.darPais();
+			resultado = elAtleta.darPais();
 		}
-		*/
-		return resultado;
+
+		return resultado.darNombre();
 	}
 	
 	/**
