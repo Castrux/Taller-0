@@ -366,6 +366,9 @@ public class ConsolaOlimpicos
 		}
 	}
 	
+	/**
+	 * 
+	 */
 	private void ejecutarBuscarPaisDeAtleta()
 	{
 		System.out.println("\n" + "Pais que representa un altleta" + "\n");
